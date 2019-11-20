@@ -14,18 +14,18 @@
         </h1>
         <div class="ui divider" style="margin-bottom: 8px;"></div>
         <div class="ui grid" style="padding: 0px 8px 0px 8px;">
-            <!-- Filters & Options -->
-            <div class="four wide column" style="margin-right: 0px; padding-right: 0px;">
-                <h5 class="ui top attached header">
-                    Search Subscribers
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui icon input fluid">
-                        <input type="text" placeholder="Search..." />
-                        <i class="inverted circular search link icon"></i>
+            <div class="four wide column" style="margin-right: 0px; padding-right: 0px; padding-top: 12px;">
+                <!-- Search Subscribers -->
+                <div class="ui category search">
+                    <div class="ui fluid icon input">
+                        <input class="prompt" style="height: 36px; border-radius: 6px;" type="text" placeholder="Search anything..." />
+                        <i class="search icon"></i>
                     </div>
+                    <div class="results"></div>
                 </div>
-                <h5 class="ui attached header">
+
+                <!-- Options -->
+                <h5 class="ui top attached header" style="margin-top: 12px;">
                     Options
                 </h5>
                 <div class="ui attached segment">
@@ -62,7 +62,34 @@
 
             <!-- Subscribers -->
             <div class="twelve wide column" style="padding-left: 10px; padding-top: 12px; margin-top: 0px;">
-                <table class="ui selectable stripped table">
+                <div class="ui center aligned container">
+                    <button class="ui left floated yellow labelled icon button">
+                        <i class="sync alternate icon"></i>
+                        &nbsp; Refresh Subscribers List
+                    </button>
+                    <div class="ui pagination menu">
+                        <a class="item">
+                            <i class="caret left icon"></i>
+                        </a>
+                        <a class="active item">
+                            1
+                        </a>
+                        <a class="item">
+                            2
+                        </a>
+                        <a class="item">
+                            3
+                        </a>
+                        <a class="item">
+                            <i class="caret right icon"></i>
+                        </a>
+                    </div>
+                    <button class="ui right floated blue labelled icon button">
+                        <i class="user plus icon"></i>
+                        &nbsp; Onboard new Subscriber
+                    </button>
+                </div>
+                <table class="ui selectable stripped table" style="margin-top: 8px;">
                     <thead>
                         <tr>
                             <th class="four wide">Name</th>
