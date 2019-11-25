@@ -2,6 +2,7 @@ import React from "react";
 import "./Panel.css"
 
 class Panel extends React.Component {
+
     render() {
         const fxSearchBox = {
             "height": "36px",
@@ -20,7 +21,7 @@ class Panel extends React.Component {
                             type="text"
                             placeholder="Search anything..."
                         />
-                        <i className="search icon"></i>
+                        <i className="search icon" ></i>
                     </div>
                     <div className="results"></div>
                 </div>
@@ -35,19 +36,19 @@ class Panel extends React.Component {
                         <div className="grouped fields">
                             <div className="field">
                                 <div className="ui radio checkbox">
-                                    <input type="radio" name="example2" checked="checked" />
+                                    <input type="radio" name="example2" checked="checked" onChange="test" />
                                     <label>All Subscribers</label>
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="ui radio checkbox">
-                                    <input type="radio" name="example2" />
+                                    <input type="radio" name="example2" onChange="test" />
                                     <label>On-boarded Subscribers</label>
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="ui radio checkbox">
-                                    <input type="radio" name="example2" />
+                                    <input type="radio" name="example2" onChange="test" />
                                     <label>All Subscribers</label>
                                 </div>
                             </div>
