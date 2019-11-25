@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.css";
+import "./Header.css";
 
 class Header extends React.Component {
     render() {
@@ -27,7 +27,7 @@ class Header extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="ui divider fx-divider-main"></div>
+                <div className="ui divider"></div>
             </div>
         );
     }

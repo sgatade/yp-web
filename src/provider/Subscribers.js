@@ -1,10 +1,10 @@
 import React from "react";
-import "./Subscribers.css";
+// import "./Subscribers.css";
 
 class Subscribers extends React.Component {
     render() {
         return (
-            <div className="twelve wide column fx-subs-main">
+            <div className="twelve wide column" style={{"margin" : "0px 0px 0px 0px", "paddingLeft": "0px", "paddingRight": "22px"}}>
                 <div className="ui center aligned container">
                     <button className="ui left floated yellow labelled icon button">
                         <i className="sync alternate icon"></i>

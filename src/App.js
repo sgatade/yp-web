@@ -10,7 +10,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header/>
-                <div className="ui grid fx-app-grid">
+                <div className="ui grid">
                     <Panel />
                     <Subscribers />
                 </div>

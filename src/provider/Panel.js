@@ -5,18 +5,18 @@ class Panel extends React.Component {
     render() {
         const fxSearchBox = {
             "height": "36px",
-            "border-radius": "6px",
+            "border-radius": "6px"
         }
-    
+
         return (
-            <div className="four wide column fx-panel-main">
+            <div className="four wide column" style={{"paddingLeft": "22px"}}>
 
                 {/* <!-- Search Subscribers --> */}
 
                 <div className="ui category search">
                     <div className="ui fluid icon input">
                         <input
-                            className="prompt " + {fxSearchBox}"
+                            className={fxSearchBox}
                             type="text"
                             placeholder="Search anything..."
                         />
@@ -27,7 +27,7 @@ class Panel extends React.Component {
 
                 {/* <!-- Options --> */}
 
-                <h5 className="ui top attached header fx-panel-options">
+                <h5 className="ui top attached header" style={{"marginTop": "14px"}}>
                     Options
                 </h5>
                 <div className="ui attached segment">
@@ -63,7 +63,6 @@ class Panel extends React.Component {
             </div>
         );
     }
-
 };
 
 export default Panel;
