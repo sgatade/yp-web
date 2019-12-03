@@ -6,7 +6,7 @@ class Subscribers extends React.Component {
         return (
             <div className="twelve wide column" style={{"margin" : "0px 0px 0px 0px", "paddingLeft": "0px", "paddingRight": "22px"}}>
                 <div className="ui center aligned container">
-                    <button className="ui left floated yellow labelled icon button">
+                    <button className="ui left floated yellow labelled icon button" style={{"marginLeft": "0px"}}>
                         <i className="sync alternate icon"></i>
                         &nbsp; Refresh Subscribers List
                     </button>

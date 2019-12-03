@@ -17,15 +17,19 @@ class App extends React.Component {
         }
     };
 
+    changeName = () => {
+        this.setState({provider: {name: 'El Eye Walleck'}});
+    }
+
     render () {
         return (
-            <div>
+            <React.Fragment>
                 <Header props={this.state} />
                 <div className="ui grid">
                     <Panel props={this.state} />
                     <Subscribers props={this.state} />
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

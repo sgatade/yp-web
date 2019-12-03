@@ -10,7 +10,9 @@ class Panel extends React.Component {
         }
 
         return (
-            <div className="four wide column" style={{"paddingLeft": "22px"}}>
+            <React.Fragment>
+            <div className="four wide column" >
+                {/* style={{"paddingLeft": "22px"}} */}
 
                 {/* <!-- Search Subscribers --> */}
 
@@ -62,6 +64,7 @@ class Panel extends React.Component {
                     <p>Humans don't think of lions as being like cats, but they are.</p>
                 </div>
             </div>
+            </React.Fragment>
         );
     }
 };
