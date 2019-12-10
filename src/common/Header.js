@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
+
 
 class Header extends React.Component {
 
@@ -17,14 +19,14 @@ class Header extends React.Component {
                         </div>
                         <div className="right aligned eight wide column">
                             <div className="fx-right-menu">
-                                <a className="ui image large label" href="www.google.com">
+                                <Link className="ui image large label" to="/home">
                                     <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg" alt="User avatar"/>
                                     {this.props.props.user.name}
-                                </a>
+                                </Link>
 
-                                <a className="ui red icon button" href="www.google.com" style={{"marginLeft": "14px"}}>
+                                <Link className="ui red icon button" to="/login" style={{"marginLeft": "14px"}}>
                                     <i className="sign-out icon"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

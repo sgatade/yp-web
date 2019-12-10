@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "./common/Header";
-import Panel from "./provider/Panel";
-import Subscribers from "./provider/Subscribers";
+import Home from "./Home";
+import Login from "./Login";
+
+import { BrowserRouter, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -23,13 +25,15 @@ class App extends React.Component {
 
     render () {
         return (
-            <React.Fragment>
+            <BrowserRouter>
                 <Header props={this.state} />
                 <div className="ui grid">
-                    <Panel props={this.state} />
-                    <Subscribers props={this.state} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/home" component={Home} />
+                    {/* <Panel props={this.state} />
+                    <Subscribers props={this.state} /> */}
                 </div>
-            </React.Fragment>
+            </BrowserRouter>
         );
     }
 }
