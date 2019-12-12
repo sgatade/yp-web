@@ -5,10 +5,10 @@ import Subscribers from "./provider/Subscribers";
 
 const Home = () => {
     return (
-        <div>
+        <React.Fragment>
             <Panel />
             <Subscribers />
-        </div>
+        </React.Fragment>
     )
 };
 

@@ -11,8 +11,8 @@ class Panel extends React.Component {
 
         return (
             <React.Fragment>
-            <div className="four wide column" >
-                {/* style={{"paddingLeft": "22px"}} */}
+            <div className="four wide column" style={{"paddingLeft": "22px"}}>
+                {/*  */}
 
                 {/* <!-- Search Subscribers --> */}
 
